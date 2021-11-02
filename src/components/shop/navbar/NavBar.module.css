@@ -1,0 +1,39 @@
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    color: rgb(73,80,82);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    /*max-width: 800px;*/
+}
+.navlinks li{
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    list-style: none;
+    color: rgb(73,80,82);
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.navlinks a{
+    text-decoration: none;
+}
+
+.navlinks li:hover{
+    background-color: #cecece;
+    border: 1px solid #868686;
+}
+
+@media (max-width: 720px){
+    .navlinks li{
+        padding: 5px;
+        min-width: 20px;
+        font-size: .9rem;
+        text-align: center;
+    }
+
+}
