@@ -7,7 +7,6 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    /*max-width: 800px;*/
 }
 .navlinks li{
     padding: 20px;
@@ -35,5 +34,13 @@
         font-size: .9rem;
         text-align: center;
     }
-
+    /*.navlinks{*/
+    /*    min-width: 400px;*/
+    /*}*/
 }
+
+/*@media (min-width: 1200px){*/
+/*    .navlinks{*/
+/*        min-width: 600px;*/
+/*    }*/
+/*}*/

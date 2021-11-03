@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    height: 100px;
+}
+
+.headerChild{
+    flex: 0 1 500px
+}
+
+.logo{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+}
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 800px;
+    height: 50%;
+}

@@ -1,9 +1,12 @@
 import './App.css';
+import LeftMainCont from "./components/shop/LeftMainCont/LeftMainCont";
+import RightMainCont from "./components/shop/RightMainCont/RightMainCont";
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+        <LeftMainCont className="left"/>
+        <RightMainCont className="right"/>
     </div>
   );
 }

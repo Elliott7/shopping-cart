@@ -1,0 +1,34 @@
+.searchCont{
+    display: flex;
+    }
+
+.searchBar{
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.searchBar:focus,
+.searchBar:focus + .searchIcon
+{
+    outline: none;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.26);
+    transition: 0.2s;
+}
+
+.searchIcon{
+    max-width: 100%;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.searchIcon:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 720px) {
+ .searchBar{
+     width: 130px;
+ }
+}

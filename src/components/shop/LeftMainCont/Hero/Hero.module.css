@@ -1,0 +1,41 @@
+.top,
+.bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.large{
+    font-size: 70px;
+    text-shadow: 3px 8px #d6eefc;
+    letter-spacing: 2px;
+    width: 50px;
+}
+
+.nextButtons{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+.nextButtons img{
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 30px;
+}
+
+.nextButtons img:hover{
+    background-color: #cecece;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media (max-width: 720px) {
+    .large{
+        font-size: 40px;
+    }
+}
