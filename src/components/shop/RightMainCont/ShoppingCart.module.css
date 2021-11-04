@@ -1,0 +1,30 @@
+.cont{
+    position: relative;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 27px;
+    background: #f38a00;
+    color: white;
+    border-radius: 50px;
+    min-width: 23px;
+    height: 23px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+.logo{
+    height: 45px;
+    transition: 0.5s;
+}
+
+.logo:hover,
+.logo:hover + .items{
+    cursor: pointer;
+    transform: scale(1.1);
+}

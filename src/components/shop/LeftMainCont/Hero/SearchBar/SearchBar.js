@@ -1,18 +1,12 @@
 import styles from "./SearchBar.module.css";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { searchAnimation } from "../../../../../animations";
 
 function SearchBar(props) {
   const searchRef = useRef();
 
   useEffect(() => {
-    gsap.from(searchRef.current, {
-      opacity: 0,
-      delay: 1.8,
-      duration: 2.8,
-      ease: "elastic.out(1,0.3)",
-      y: -100,
-    });
+    searchAnimation(searchRef.current);
   }, []);
 
   return (

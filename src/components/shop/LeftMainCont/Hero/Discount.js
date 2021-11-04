@@ -5,7 +5,7 @@ function Discount(props) {
     <div className={` ${props.className}`}>
       <p className={styles.discount}>{props.children}</p>
       <hr />
-      <p>SAVE UP TO</p>
+      <p className={styles.discountText}>SAVE UP TO</p>
     </div>
   );
 }

@@ -1,0 +1,58 @@
+const testCards = [
+  {
+    name: "Air Max 90",
+    price: "£130.00",
+    bgc: "#b6e2f8",
+    imageSource: "/images/air-max-90.png",
+    colors: 3,
+    id: 0,
+    modelNumber: 368513611368,
+  },
+  {
+    name: "Air Max 270",
+    price: "£130.00",
+    bgc: "#78787c",
+    imageSource: "/images/air-max-270.png",
+    colors: 3,
+    id: 1,
+    modelNumber: 368513611369,
+  },
+  {
+    name: "Air Max Excee",
+    price: "£130.00",
+    bgc: "#babbc0",
+    imageSource: "/images/air-max-excee-.png",
+    colors: 3,
+    id: 2,
+    modelNumber: 368513611370,
+  },
+  {
+    name: "Nike Air Force",
+    price: "£130.00",
+    bgc: "#f5ddc9",
+    imageSource: "/images/nike-air-force.png",
+    colors: 3,
+    id: 3,
+    modelNumber: 368513611365,
+  },
+  {
+    name: "Nike Span 2 ",
+    price: "£130.00",
+    bgc: "#959ebd",
+    imageSource: "/images/nike-span-2.png",
+    colors: 3,
+    id: 4,
+    modelNumber: 368513611367,
+  },
+  {
+    name: "Air Force 1 High",
+    price: "£130.00",
+    bgc: "#c93849",
+    imageSource: "/images/nike-air-force-1-high.png",
+    colors: 3,
+    id: 5,
+    modelNumber: 368513611366,
+  },
+];
+
+export default testCards;

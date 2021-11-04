@@ -14,6 +14,7 @@
 .right{
   width: 35%;
   background-color: lightgrey;
+  overflow: hidden;
 }
 
 .left,

@@ -1,0 +1,34 @@
+.container{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 50px;
+    overflow-y: auto;
+    gap: 10px;
+
+}
+
+.size{
+    padding: 25px 25px 0 25px;
+    transition: 0.5s;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.sizeCont:hover {
+    cursor: pointer;
+}
+.sizeCont:hover .size{
+    transform: translateY(-15px);
+}
+.sizeCont:hover .dot{
+    background-color: white;
+}
+
+

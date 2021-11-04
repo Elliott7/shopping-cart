@@ -11,6 +11,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.card:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.card:focus{
+    transform: scale(1.5);
+}
 
 .img{
     height: 100px;

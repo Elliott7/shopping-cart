@@ -1,0 +1,28 @@
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+}
+
+.name,
+.reviews{
+    padding-left: 60px;
+}
+
+.name{
+    font-size: 30px;
+    height: 50px;
+    padding-top: 20px;
+}
+.name hr{
+    border-bottom: 1px solid #606060;
+    width: 500px;
+}
+
+.reviews p{
+    display: inline;
+}
+.reviews p:last-child{
+    padding-left: 20px;
+}
