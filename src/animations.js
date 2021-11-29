@@ -34,14 +34,14 @@ function discountAnimation(currentRef) {
   discount(currentRef);
 }
 
-function bottomShoesAnimation(currentRef) {
-  const botShoes = createAnimation(2.6, 3.5, "elastic.out(1,0.3)", 100);
-  botShoes(currentRef);
+function carouselAnimation(currentRef) {
+  const carousel = createAnimation(2.6, 3.5, "elastic.out(1,0.3)", 100);
+  carousel(currentRef);
 }
 
-function selectedProductAnimation(currentRef) {
-  const selectedProduct = createAnimation(3, 4, "elastic.out(1,0.3)", 0, 100);
-  selectedProduct(currentRef);
+function ProductAnimation(currentRef) {
+  const Product = createAnimation(3, 4, "elastic.out(1,0.3)", 0, 100);
+  Product(currentRef);
 }
 
 function sizeAnimation(currentRef) {
@@ -54,7 +54,7 @@ export {
   navAnimation,
   brandAnimation,
   discountAnimation,
-  bottomShoesAnimation,
-  selectedProductAnimation,
+  carouselAnimation,
+  ProductAnimation,
   sizeAnimation,
 };

@@ -8,7 +8,7 @@ function Sizes(props) {
       <div className={styles.container}>
         {arrayOfSizes.map((size) => {
           return (
-            <div className={styles.sizeCont}>
+            <div className={styles.sizeCont} key={Math.random()}>
               <div className={styles.size}>{size}</div>
               <div className={styles.dot}></div>
             </div>

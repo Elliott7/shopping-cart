@@ -1,7 +1,8 @@
 import styles from "./Hero.module.css";
 import Discount from "./Discount";
 import SearchBar from "./SearchBar/SearchBar";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { brandAnimation } from "../../../../animations";
 
 function Hero(props) {
   // const [left, setLeft] = useState(props.len - 1);
@@ -26,9 +27,13 @@ function Hero(props) {
   //   }
   //   console.log(left <= props.len - 2);
   // };
+  const midRef = useRef();
+  useEffect(() => {
+    brandAnimation(midRef.current);
+  }, []);
 
   return (
-    <div className={props.className}>
+    <div className={props.className} ref={midRef}>
       <div className={styles.top}>
         <div>
           <SearchBar />

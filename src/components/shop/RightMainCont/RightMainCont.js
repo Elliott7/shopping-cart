@@ -2,15 +2,18 @@ import NavBar from "../navbar/NavBar";
 import styles from "./RightMainCont.module.css";
 import BotCont from "./BotCont/BotCont";
 import ShoppingCart from "./ShoppingCart";
-import { navAnimation } from "../../../animations";
+import { navAnimation, ProductAnimation } from "../../../animations";
 import { useRef, useEffect } from "react";
 
 function RightMainCont(props) {
   const headerRef = useRef();
+  const productRef = useRef();
+
   const { name, price, bgc, imageSource, id, modelNumber } = props.selection;
 
   useEffect(() => {
     navAnimation(headerRef.current);
+    ProductAnimation(productRef.current);
   }, []);
   return (
     <div className={props.className} style={{ backgroundColor: `${bgc}` }}>
@@ -20,7 +23,7 @@ function RightMainCont(props) {
         </div>
         <ShoppingCart />
       </header>
-      <div className={styles.middle}>
+      <div className={styles.middle} ref={productRef}>
         <img src={imageSource} className={styles.mainPicture} alt="" />
       </div>
       <BotCont className={styles.bottom} />
