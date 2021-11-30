@@ -11,7 +11,7 @@ function SearchBar(props) {
 
   return (
     <div className={`${props.className} ${styles.searchCont}`} ref={searchRef}>
-      <input className={styles.searchBar} type="text" />
+      <input className={styles.searchBar} type="text" aria-label="Search Box" />
       <img
         className={styles.searchIcon}
         src="/search-icon.png"
