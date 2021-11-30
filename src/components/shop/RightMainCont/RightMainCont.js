@@ -16,7 +16,10 @@ function RightMainCont(props) {
     ProductAnimation(productRef.current);
   }, []);
   return (
-    <div className={props.className} style={{ backgroundColor: `${bgc}` }}>
+    <div
+      className={`${props.className} rightCont`}
+      style={{ backgroundColor: `${bgc}` }}
+    >
       <header className={styles.header} ref={headerRef}>
         <div>
           <strong>Model</strong> : <em>{modelNumber}</em>
@@ -24,7 +27,11 @@ function RightMainCont(props) {
         <ShoppingCart />
       </header>
       <div className={styles.middle} ref={productRef}>
-        <img src={imageSource} className={styles.mainPicture} alt="" />
+        <img
+          src={imageSource}
+          className={styles.mainPicture}
+          alt="Selected Shoe"
+        />
       </div>
       <BotCont className={styles.bottom} />
     </div>

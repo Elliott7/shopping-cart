@@ -1,5 +1,4 @@
 .header,
-.middle,
 .bottom{
     width: 100%;
 }
@@ -18,10 +17,11 @@
 }
 
 .middle{
-    height: 600px;
+    max-height: 600px;
     display: flex;
     justify-content: center;
     align-items: end;
+    overflow: hidden;
 }
 .bottom{
     height: 255px;
@@ -30,7 +30,7 @@
 }
 
 .mainPicture{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 80px;
     transform: rotateZ(-30deg);
