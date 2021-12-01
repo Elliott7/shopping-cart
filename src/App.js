@@ -9,7 +9,7 @@ function App() {
   const [current, setCurrent] = useState(data[0]);
 
   function filterResults(id) {
-    setCurrent(data.filter((shoe) => shoe.id == id)[0]);
+    setCurrent(data.filter((shoe) => shoe.id === parseInt(id))[0]);
   }
   return (
     <div className="App">
