@@ -17,14 +17,19 @@
 .itemPicture{
     max-width: 150px;
 }
-.itemName{
-    display: inline;
+.itemName,
+.itemPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .itemName button{
     background-color: #b81a18;
     font-weight: bold;
-    font-size: 15px;
+    margin: 10px;
+    font-size: 14px;
     border-radius: 50px;
+    border:none;
     color: white;
     width: 30px;
     height: 30px;
@@ -33,4 +38,7 @@
 .itemName button:hover{
     background-color: #da1d1b;
     cursor: pointer;
+}
+.itemPrice{
+    font-weight: bold;
 }

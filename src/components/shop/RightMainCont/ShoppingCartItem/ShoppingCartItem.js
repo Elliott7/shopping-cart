@@ -15,7 +15,7 @@ const ShoppingCartItem = (props) => {
           </div>
           <button onClick={handleClick}>x</button>
         </div>
-        <span>{props.price}</span>
+        <span className={styles.itemPrice}>{props.price}</span>
       </div>
     </div>
   );
