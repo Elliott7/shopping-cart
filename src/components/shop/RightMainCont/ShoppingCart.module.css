@@ -1,6 +1,13 @@
 .cont{
     position: relative;
+    transition: 0.5s;
 }
+
+.cont:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .items{
     display: flex;
     justify-content: center;
@@ -17,14 +24,7 @@
     transition: 0.5s;
 }
 
-
 .logo{
     height: 45px;
     transition: 0.5s;
-}
-
-.logo:hover,
-.logo:hover + .items{
-    cursor: pointer;
-    transform: scale(1.1);
 }

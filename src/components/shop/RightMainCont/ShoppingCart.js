@@ -7,7 +7,7 @@ function ShoppingCart(props) {
         alt="shopping bag logo"
         className={styles.logo}
       />
-      <p className={styles.items}>0</p>
+      <p className={styles.items}>{props.shoppingCart.length}</p>
     </div>
   );
 }

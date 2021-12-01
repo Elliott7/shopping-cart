@@ -16,8 +16,8 @@
 .nextButtons{
     height: 100%;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     gap: 20px;
 }
 .nextButtons img{

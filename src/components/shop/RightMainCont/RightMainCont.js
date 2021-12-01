@@ -1,15 +1,21 @@
-import NavBar from "../navbar/NavBar";
 import styles from "./RightMainCont.module.css";
 import BotCont from "./BotCont/BotCont";
 import ShoppingCart from "./ShoppingCart";
 import { navAnimation, ProductAnimation } from "../../../animations";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 function RightMainCont(props) {
   const headerRef = useRef();
   const productRef = useRef();
+  const [shoppingCart, setShoppingCart] = useState([]);
 
-  const { name, price, bgc, imageSource, id, modelNumber } = props.selection;
+  const addItemToCart = (selection) => {
+    setShoppingCart((prevState) => {
+      return [...prevState, selection];
+    });
+  };
+
+  const { name, price, bgc, imageSource, modelNumber } = props.selection;
 
   useEffect(() => {
     navAnimation(headerRef.current);
@@ -24,7 +30,7 @@ function RightMainCont(props) {
         <div>
           <strong>Model</strong> : <em>{modelNumber}</em>
         </div>
-        <ShoppingCart />
+        <ShoppingCart shoppingCart={shoppingCart} />
       </header>
       <div className={styles.middle} ref={productRef}>
         <img
@@ -33,7 +39,12 @@ function RightMainCont(props) {
           alt="Selected Shoe"
         />
       </div>
-      <BotCont className={styles.bottom} />
+      <BotCont
+        className={styles.bottom}
+        name={name}
+        price={price}
+        addItem={addItemToCart}
+      />
     </div>
   );
 }
