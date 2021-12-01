@@ -9,8 +9,8 @@ hr{
 hr{
     color: black;
     width: 150px;
-    margin-right: -50px;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 .discount{
