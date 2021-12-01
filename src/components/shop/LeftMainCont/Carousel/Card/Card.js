@@ -9,7 +9,7 @@ function Card(props) {
   return (
     <div
       className={styles.card}
-      style={{ backgroundColor: `${bgc}` }}
+      style={{ backgroundColor: `${bgc}`, order: `${props.order}` }}
       onClick={clickHandler}
       id={`C${id}`}
     >

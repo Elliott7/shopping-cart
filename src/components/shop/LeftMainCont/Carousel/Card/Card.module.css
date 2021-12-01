@@ -6,7 +6,6 @@
     min-width: 170px;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    transition: 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,6 +49,5 @@
 }
 .colors{
     font-weight: 100;
-    /*font-size: 0.9rem;*/
     color: #6b6b6b;
 }

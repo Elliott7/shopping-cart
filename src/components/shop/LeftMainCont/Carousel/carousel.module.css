@@ -1,23 +1,29 @@
+.carouselCont{
+    height: 300px;
+    width: 850px;
+    position: relative;
+    overflow: hidden;
+}
+
 .carousel{
     display:flex;
     align-items: center;
-    max-width: 850px;
     height: 300px;
-    overflow-x: scroll;
+    position: relative;
     scroll-behavior: smooth;
 }
 @media (max-width: 992px) {
-    .carousel{
+    .carouselCont{
         width: 700px;
     }
 }
 @media (max-width: 768px) {
-    .carousel{
+    .carouselCont{
         width: 600px;
     }
 }
 @media (max-width: 600px) {
-    .carousel{
+    .carouselCont{
         width: 400px;
     }
 }

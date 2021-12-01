@@ -8,11 +8,21 @@ function Carousel(props) {
   useEffect(() => {
     carouselAnimation(carouselRef.current);
   }, []);
+
   return (
-    <div className={styles.carousel} ref={carouselRef}>
-      {props.data.map((card) => {
-        return <Card key={card.id} card={card} filter={props.filter} />;
-      })}
+    <div className={styles.carouselCont}>
+      <div className={styles.carousel} ref={carouselRef}>
+        {props.data.map((card) => {
+          return (
+            <Card
+              key={card.id}
+              card={card}
+              order={props.order[card.id]}
+              filter={props.filter}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
