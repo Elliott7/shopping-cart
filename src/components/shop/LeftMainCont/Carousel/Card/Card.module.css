@@ -51,3 +51,12 @@
     font-weight: 100;
     color: #6b6b6b;
 }
+
+@media (max-width: 600px) {
+    .card{
+        min-width: 120px;
+    }
+    .pic{
+        max-width: 100px;
+    }
+}

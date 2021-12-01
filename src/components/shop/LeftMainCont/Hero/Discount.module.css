@@ -21,3 +21,12 @@ hr{
     font-size: .8rem;
     color: #6b6b6b;
 }
+
+@media (max-width: 600px) {
+    hr{
+        width: 100px;
+    }
+    .discount{
+        font-size: 1rem;
+    }
+}
