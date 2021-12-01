@@ -1,7 +1,7 @@
 import styles from "./ShoppingCart.module.css";
 function ShoppingCart(props) {
   return (
-    <div className={styles.cont}>
+    <div className={styles.cont} onClick={props.clickHandler}>
       <img
         src="/shopping-bag.png"
         alt="shopping bag logo"

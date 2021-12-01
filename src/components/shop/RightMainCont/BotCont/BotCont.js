@@ -21,6 +21,7 @@ function BotCont(props) {
       name: props.name,
       price: props.price,
       size: shoeSize,
+      src: props.src,
       key: Math.random(),
     };
     props.addItem(purchase);

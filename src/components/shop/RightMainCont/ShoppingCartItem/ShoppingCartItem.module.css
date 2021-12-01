@@ -1,0 +1,36 @@
+.itemParent{
+    display: flex;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+.itemCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.itemPicture{
+    max-width: 150px;
+}
+.itemName{
+    display: inline;
+}
+.itemName button{
+    background-color: #b81a18;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.itemName button:hover{
+    background-color: #da1d1b;
+    cursor: pointer;
+}
