@@ -44,6 +44,7 @@
 .cartContent{
     height: 85%;
     padding: 1rem;
+    overflow: scroll;
 }
 .cartActions{
     min-height: 5%;
@@ -62,4 +63,11 @@
 .cartActions button:hover{
     cursor: pointer;
     background-color: #1a253d;
+}
+
+@media (max-width: 1200px){
+    .cartModal{
+        height: 80%;
+        width: 300px;
+    }
 }

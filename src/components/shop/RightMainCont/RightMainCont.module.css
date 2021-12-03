@@ -36,18 +36,22 @@
     transform: rotateZ(-30deg);
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
     .mainPicture{
-
+        max-width: 160px;
+        margin: 0;
     }
-}
-
-@media (max-width: 600px) {
-    .mainPicture{
-        min-height: 160px;
-        min-width: 160px;
+    .header{
+        height: 80px;
     }
-    /*.rightCont{*/
-    /*    width: 600px !important;*/
-    /*}*/
+    .header div{
+        padding: 0;
+        font-size: 14px;
+    }
+    .middle{
+        height: 200px;
+    }
+    .bottom{
+        height: 225px;
+    }
 }

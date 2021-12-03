@@ -30,13 +30,12 @@
 
   .left{
     width: 100%;
-    /*display: none;*/
   }
 
   .right{
     display: none;
     width: 0;
-    /*width: 100%;*/
+    border-radius: 20px;
   }
 
   .mobile-modal{
@@ -45,7 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 70vh;*/
     width: 60%;
     margin: 20%;
     z-index: 100;

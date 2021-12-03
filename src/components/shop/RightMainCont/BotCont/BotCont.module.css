@@ -47,3 +47,24 @@
 .reviews p:last-child{
     padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+    .buyButton {
+        width: 100px;
+        right: 0;
+    }
+    .name,
+    .reviews,
+    .hrDiv{
+        padding: 0 20px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .reviews{
+        font-size: 15px;
+    }
+    .reviews p:last-child{
+        padding: 5px;
+    }
+}
