@@ -35,3 +35,19 @@
     margin-bottom: 80px;
     transform: rotateZ(-30deg);
 }
+
+@media (max-width: 768px){
+    .mainPicture{
+
+    }
+}
+
+@media (max-width: 600px) {
+    .mainPicture{
+        min-height: 160px;
+        min-width: 160px;
+    }
+    /*.rightCont{*/
+    /*    width: 600px !important;*/
+    /*}*/
+}

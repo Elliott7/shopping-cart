@@ -51,7 +51,12 @@ function LeftMainCont(props) {
         rightClick={rightClick}
       />
 
-      <Carousel data={props.data} order={carouselArray} filter={props.filter} />
+      <Carousel
+        data={props.data}
+        order={carouselArray}
+        filter={props.filter}
+        mobilePopUp={props.mobilePopUp}
+      />
     </div>
   );
 }

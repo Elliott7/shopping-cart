@@ -30,10 +30,34 @@
 
   .left{
     width: 100%;
+    /*display: none;*/
   }
 
   .right{
     display: none;
     width: 0;
+    /*width: 100%;*/
+  }
+
+  .mobile-modal{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 70vh;*/
+    width: 60%;
+    margin: 20%;
+    z-index: 100;
+  }
+
+  .mobileBackdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
   }
 }

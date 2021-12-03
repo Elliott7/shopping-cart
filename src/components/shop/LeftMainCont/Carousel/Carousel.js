@@ -19,6 +19,7 @@ function Carousel(props) {
               card={card}
               order={props.order[card.id]}
               filter={props.filter}
+              mobilePopUp={props.mobilePopUp}
             />
           );
         })}
